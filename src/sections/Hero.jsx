@@ -166,7 +166,7 @@ const Hero = () => {
 
 
   return (
-    <section ref={rootRef} className="min-h-screen w-full flex flex-col relative pt-20" id="home">
+    <section ref={rootRef} className="sm:min-h-screen w-full flex flex-col relative pt-20" id="home">
       <div className="w-full mx-auto flex flex-col sm:mt-12 mt-20 c-space gap-3">
         <p data-hero-line className="sm:text-3xl text-xl font-medium text-white text-center font-generalsans">
           Hi, I am 
@@ -212,7 +212,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="col-span-1 my-4 xl:row-span-3 h-full relative">  {/* Added relative here */}
+      <div className="col-span-1 sm:my-4 xl:row-span-3 h-full relative">
         <div className="card flex flex-col justify-end h-full">
           <LazyImage 
             ref={imageRef} 

@@ -79,4 +79,10 @@ export const socialLinks = [
     url: 'https://www.linkedin.com/in/sai-esha-hyderboni/',
     icon: '/assets/social/linkedin.svg',
   },
+  {
+    id: 2,
+    name: 'GitHub',
+    url: 'https://github.com/hsaiesha30',
+    icon: '/assets/social/github.svg',
+  },
 ];
