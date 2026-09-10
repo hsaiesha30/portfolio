@@ -46,6 +46,10 @@ body {
   .section-container:first-child {
     min-height: auto;
   }
+
+  .section-container:nth-child(2) {
+    padding-top: 0;
+  }
 }
 
 .section-container:last-child {
