@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 import { navLinks } from '../constants/index.js';
 import PDFViewer from '../components/PDFViewer.jsx';
-import { RESUME_URL } from '../config/resume.js';
+import { RESUME_DOWNLOAD_URL, RESUME_URL } from '../config/resume.js';
 import LazyImage from '../components/LazyImage.jsx';
 
 // Smooth scrolling function
@@ -93,6 +93,7 @@ const Navbar = () => {
       <PDFViewer 
         pdfUrl={RESUME_URL} 
         onClose={closePDF} 
+        downloadUrl={RESUME_DOWNLOAD_URL}
       />
     </header>
   );

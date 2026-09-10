@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const PDFViewer = ({ isOpen, onClose, pdfUrl }) => {
+const PDFViewer = ({ isOpen, onClose, pdfUrl, downloadUrl = pdfUrl }) => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -50,7 +50,7 @@ const PDFViewer = ({ isOpen, onClose, pdfUrl }) => {
         {/* Footer */}
         <div className="flex justify-end p-4 border-t bg-gray-50">
           <a
-            href={pdfUrl}
+            href={downloadUrl}
             download
             className="px-4 py-2 bg-green-600 text-white rounded hover:bg-green-700"
           >
