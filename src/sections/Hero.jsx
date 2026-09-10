@@ -212,7 +212,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="col-span-1 sm:my-4 xl:row-span-3 h-full relative">
+      <div className="hero-image-wrapper col-span-1 sm:my-4 xl:row-span-3 h-full relative">
         <div className="card flex flex-col justify-end h-full">
           <LazyImage 
             ref={imageRef} 

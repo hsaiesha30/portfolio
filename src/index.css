@@ -52,6 +52,22 @@ body {
   }
 }
 
+@media (pointer: coarse) and (max-width: 1100px) {
+  .section-container:first-child,
+  #home {
+    min-height: auto;
+  }
+
+  .hero-image-wrapper {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .section-container:nth-child(2) {
+    padding-top: 0;
+  }
+}
+
 .section-container:last-child {
   padding-bottom: 2rem;
 }
