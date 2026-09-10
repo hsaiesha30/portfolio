@@ -91,6 +91,7 @@ const Navbar = () => {
       
       {/* PDF Viewer Modal */}
       <PDFViewer 
+        isOpen={isPDFOpen}
         pdfUrl={RESUME_URL} 
         onClose={closePDF} 
         downloadUrl={RESUME_DOWNLOAD_URL}
