@@ -1,5 +1,4 @@
 import { useLayoutEffect, useRef } from 'react';
-import Button from '../components/Button.jsx';
 import SocialMedia from '../components/SocialMedia.jsx';
 import LazyImage from '../components/LazyImage.jsx';
 import { gsap, ScrollTrigger } from '../utils/gsapSetup.js';
@@ -226,30 +225,6 @@ const Hero = () => {
 
       <div className="w-full h-full absolute inset-0 pointer-events-none"></div>
 
-      {/* Button only visible on screens smaller than laptop resolution */}
-      <div className="absolute bottom-20 left-0 right-0 w-full z-10 c-space flex justify-center"> 
-        <div
-          role="button"
-          tabIndex={0}
-          onClick={() => {
-            const element = document.getElementById('about');
-            if (element) {
-              element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-          }}
-          onKeyDown={(e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-              const element = document.getElementById('about');
-              if (element) {
-                element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-              }
-            }
-          }}
-          className="w-fit block lg:hidden"
-        >
-          <Button name="Know about me" />
-        </div>
-      </div>
     </section>
   );
 };

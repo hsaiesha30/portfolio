@@ -2,7 +2,9 @@ const About = () => {
   return (
     <section className="w-full flex flex-col justify-center" id="about">
       <div className="c-space">
-        <p className="head-text sm:text-3xl text-xl font-medium text-space_gradient text-center font-generalsans">ABOUT ME</p>
+        <p className="head-text mt-8 sm:mt-10 text-2xl sm:text-3xl font-medium text-space_gradient text-center font-generalsans leading-tight">
+          ABOUT ME
+        </p>
       
       <div className="my-10 grid xl:grid-cols-3 xl:grid-rows-2 md:grid-cols-2 grid-cols-1 gap-5 h-full">
         <div className="col-span-3 xl:row-span-3">

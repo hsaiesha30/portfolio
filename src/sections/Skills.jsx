@@ -98,7 +98,7 @@ const Skills = () => {
       >
         {categoryName}
       </motion.p>
-      <div className="grid grid-cols-4 gap-3">
+      <div className="grid grid-cols-3 min-[380px]:grid-cols-4 gap-3">
         {skills.map((tech, index) => {
           const direction = directions[index % directions.length];
           const variants = getDirectionalVariant(direction);

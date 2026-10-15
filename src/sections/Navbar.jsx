@@ -58,7 +58,11 @@ const Navbar = () => {
             onClick={toggleMenu}
             className="text-neutral-400 hover:text-white focus:outline-none sm:hidden flex"
             aria-label="Toggle menu">
-            <LazyImage src={isOpen ? 'assets/close.svg' : 'assets/menu.svg'} alt="toggle" className="w-6 h-6" loading="eager" />
+            {isOpen ? (
+              <span aria-hidden="true" className="text-3xl leading-none">×</span>
+            ) : (
+              <LazyImage src="/assets/menu.svg" alt="" className="w-6 h-6" loading="eager" />
+            )}
           </button>
 
           <nav className="sm:flex hidden">
