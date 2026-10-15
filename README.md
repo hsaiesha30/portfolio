@@ -126,7 +126,6 @@ The optimized build will be generated in the `dist/` folder.
 ## Customization
 
 ### Personal Information
-- **Name & Title**: Update in `src/sections/Hero.jsx`
 - **About Section**: Edit `src/sections/About.jsx`
 - **Contact Email**: Update in `src/sections/Contact.jsx`
 
